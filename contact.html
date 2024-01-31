@@ -113,6 +113,7 @@
                         <textarea id="message" name="message" rows="4" required></textarea>
                     
                         <button type="submit">Submit</button>
+                        <button type="button" class="clear-button" onclick="clearForm()">Clear Form</button>
                     </form>
                 </section>
                 <footer class="page__meta"></footer>
@@ -129,6 +130,14 @@
                 });
         </script>
     </div>
+    <script>
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+        }
+    </script>
     <!-- Main JavaScript -->
     <script src="assets/js/main.min.js"></script>
 </body>
