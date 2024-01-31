@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO -->
-    <title>Atilla Asghari's Home Page</title>
+    <title>Contact</title>
     <meta property="og:locale" content="en-US">
     <meta property="og:site_name" content="Atilla Asghari / website">
-    <meta property="og:title" content="Atilla Asghari Home Page">
-    <meta property="og:url" content="index.html">
-    <meta property="og:description" content="About me">
+    <meta property="og:title" content="404 Not Found!">
+    <meta property="og:url" content="404.html">
+    <meta property="og:description" content="Not Found">
     
     <!-- JSON-LD for SEO -->
     <script type="application/ld+json">
@@ -42,15 +42,14 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/academicons.css"/>
+    <link rel="stylesheet" href="assets/css/form.css">
 
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3D8FC2"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Masthead -->
     <div class="masthead">
         <div class="masthead__inner-wrap">
             <div class="masthead__menu">
@@ -71,10 +70,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Main Content -->
     <div id="main" role="main">
-        <!-- Sidebar -->
         <div class="sidebar sticky">
             <script>
                 // Fetch and inject sidebar content
@@ -85,65 +81,55 @@
                     });
             </script>
         </div>
-
-        <!-- Article Content -->
         <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-            <!-- ... Article Content ... -->
             <div class="page__inner-wrap">
                 <header>
-                    <h1 class="page__title" itemprop="headline">About Me</h1>
+                    <h1 class="page__title" itemprop="headline">Contact With Me</h1>
                 </header>
-    
+                <p>My contact information is below, and there is form you can contact me using it.</p>
+                <p>I have 3 email addresses that i check daily you can send email whichever you want.</p>
+                <ul>
+                    <li>Email:
+                        <ol>
+                            <li><a href="mailto:asghariatilla@gmail.com">asghariatilla@gmail.com</a></li>
+                            <li><a href="mailto:atillaasghari01@gmail.com">atillaasghari01@gmail.com</a></li>
+                            <li><a href="mailto:atillaasghari10@gmail.com">atillaasghari10@gmail.com</a></li>
+                        </ol>
+                    </li>
+                    <li>Phone: (+98)914 474 3848</li>
+                </ul>
                 <section class="page__content" itemprop="text">
-                    <p>Hi I’m Atilla, I am a computer engineering student at Azad University of Urmia. Since childhood, 
-                        I have had a strong interest in computers and technology. 
-                        Initially, my focus was more on hardware and electronics. 
-                        I used to assemble and disassemble my computer and create electronic circuits, 
-                        often building new things with electronic components from my toys. In 1395 (2016/2017), 
-                        at the age of 15, I obtained a certificate as a general computer hardware repair technician.
-                    </p>
-                    <p>
-                        Later, I became familiar with the Python programming language, 
-                        marking the beginning of my journey into the programming world in 1398 (2019/2020). 
-                        After Python, I started learning various programming languages. I was eager to learn everything, 
-                        but I realized that I needed to narrow down the languages for my goals. 
-                        I identified Python, C/C++, PHP, and a small amount of JavaScript as the languages I could use for my purposes and continued learning them. 
-                        Alongside programming, I developed a keen interest in writing articles. 
-                        Because of this, I learned HTML/CSS to create my personal website. 
-                        This allows me to share my projects and articles on the platform.
-                    </p>
-    
-                    <!-- <h2 id="a-data-driven-personal-website">A data-driven personal website</h2>
-                    <p>Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website’s content from its form...</p>
-                    <h2 id="getting-started">Getting started</h2>
-                    <ol>
-                        <li>Register a GitHub account if you don’t have one and confirm your e-mail (required!)</li>
-                        <li>Fork <a href="https://github.com/academicpages/academicpages.github.io">this repository</a> by clicking the “fork” button in the top right.</li>
-                    </ol>
-                    <h2 id="site-wide-configuration">Site-wide configuration</h2>
-                    <p>The main configuration file for the site is in the base directory in <a href="https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml">_config.yml</a>, which defines the content in the sidebars and other site-wide features...</p>
-                    <h2 id="for-more-info">For more info</h2>
-                    <p>More info about configuring academicpages can be found in <a href="markdown/index.html">the guide</a>. The <a href="https://mmistakes.github.io/minimal-mistakes/docs/configuration/">guides for the Minimal Mistakes theme</a> (which this theme was forked from) might also be helpful.</p> -->
+                    <form action="https://formspree.io/f/mdoqenob" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
                 </section>
-    
                 <footer class="page__meta"></footer>
             </div>
         </article>
     </div>
-
-    <!-- Page Footer -->
     <div class="page__footer" id="footer">
         <script>
             // Fetch and inject footer content
-            fetch('./structure/footer.html')
+            fetch('structure/footer.html')
                 .then(response => response.text())
                 .then(html => {
                     document.querySelector('#footer').innerHTML = html;
                 });
         </script>
     </div>
-
-    <!-- Scripts -->
+    <!-- Main JavaScript -->
     <script src="assets/js/main.min.js"></script>
 </body>
 </html>
