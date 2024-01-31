@@ -75,14 +75,15 @@
     <!-- Main Content -->
     <div id="main" role="main">
         <!-- Sidebar -->
-        <div class="sidebar sticky">
+        <div class="sidebar sticky" id="sidebar">
             <script>
                 // Fetch and inject sidebar content
                 fetch('structure/sidebar.html')
                     .then(response => response.text())
                     .then(html => {
-                        document.querySelector('.sidebar.sticky').innerHTML = html;
-                    });
+                        document.getElementById('sidebar').innerHTML = html;
+                    })
+                    .catch(error => console.error('Error fetching sidebar content:', error));
             </script>
         </div>
 
