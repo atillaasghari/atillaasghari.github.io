@@ -34,11 +34,35 @@
     </div>
     <![endif]-->
     <div class="masthead">
-        <!-- ... (masthead content) ... -->
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="../index.html">Atilla Asghari</a></li>
+                        <li class="masthead__menu-item"><a href="../publications.html">Publications</a></li>
+                        <!-- <li class="masthead__menu-item"><a href="talks.html">Talks</a></li> -->
+                        <!-- <li class="masthead__menu-item"><a href="teaching.html">Teaching</a></li> -->
+                        <li class="masthead__menu-item"><a href="../portfolio.html">Portfolio</a></li>
+                        <li class="masthead__menu-item"><a href="../blog.html">Blog Posts</a></li>
+                        <li class="masthead__menu-item"><a href="../cv.html">CV</a></li>
+                        <li class="masthead__menu-item"><a href="../contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
     </div>
     <div id="main" role="main">
         <div class="sidebar sticky">
-            <!-- ... (sidebar content) ... -->
+            <script>
+                // Fetch and inject sidebar content
+                fetch('../structure/sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('.sidebar.sticky').innerHTML = html;
+                    });
+            </script>
         </div>
         <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
             <meta itemprop="headline" content="atilla-asghari-functions">
@@ -85,18 +109,18 @@
             </div>
         </article>        
     </div>
-    <div class="page__footer">
-        <!-- ... (footer content) ... -->
+    <!-- Page Footer -->
+    <div class="page__footer" id="footer">
+        <script>
+            // Fetch and inject footer content
+            fetch('../structure/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('#footer').innerHTML = html;
+                });
+        </script>
     </div>
+    
     <script src="../assets/js/main.min.js"></script>
-    <script>
-        // Google Analytics script
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
-        ga('create', '', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 </html>

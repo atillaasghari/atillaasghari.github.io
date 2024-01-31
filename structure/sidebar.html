@@ -1,6 +1,13 @@
 <div itemscope itemtype="http://schema.org/Person">
     <div class="author__avatar">
-        <img src="images/atillaasghari.jpg" class="author__avatar" alt="Atilla Asghari">
+        <script>
+            // Get the host name using JavaScript
+            var hostname = window.location.hostname;
+            // Form a link using the host name
+            var link = "http://"+ hostname +"/images/atillaasghari.jpg";
+            document.write("<img src='"+ link +"' class='author__avatar' alt='Atilla Asghari'>");
+        </script>
+        <!-- <img src="https://atillaasghari.github.io/images/atillaasghari.jpg" class="author__avatar" alt="Atilla Asghari"> -->
     </div>
     <div class="author__content">
         <h3 class="author__name">Atilla Asghari</h3>
