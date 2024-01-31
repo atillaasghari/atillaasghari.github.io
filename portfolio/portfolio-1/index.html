@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Atilla ASghari's Home Page</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Atilla Asghari / website">
+    <meta property="og:title" content="Atilla Asghari Home Page">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="About me">
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Person",
+            "name" : "Atilla Asghari",
+            "url" : "https://atillaasghari.github.io",
+            "sameAs" : ["https://www.instagram.com/atilla_asghari/", "https://ir.linkedin.com/in/atilla-asghari-72280a21a"]
+        }
+    </script>
+
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/7356b287c5.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NW3D8FC2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Feed -->
+
+    <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Atilla Asghari / Home Page">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/academicons.css"/>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3D8FC2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="../../index.html">Atilla Asghari</a></li>
+                        <li class="masthead__menu-item"><a href="../../publications.html">Publications</a></li>
+                        <!-- <li class="masthead__menu-item"><a href="talks.html">Talks</a></li> -->
+                        <!-- <li class="masthead__menu-item"><a href="teaching.html">Teaching</a></li> -->
+                        <li class="masthead__menu-item"><a href="../../portfolio.html">Portfolio</a></li>
+                        <li class="masthead__menu-item"><a href="../../blog.html">Blog Posts</a></li>
+                        <li class="masthead__menu-item"><a href="../../cv.html">CV</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="main" role="main">
+        <div class="sidebar sticky">
+            <script>
+                // Fetch and inject sidebar content
+                fetch('../../structure/sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('.sidebar.sticky').innerHTML = html;
+                    });
+            </script>
+        </div>
+        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="page__inner-wrap">
+                <header>
+                    <h1 class="page__title" itemprop="headline">Portfolio item number 1</h1>
+                </header>
+                <section class="page__content" itemprop="text">
+                    <p>This is an item in your portfolio. It can have images or nice text.
+                        If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML.
+                    </p>
+                </section>
+                <footer class="page__meta"></footer>
+                <section class="page__share">
+                    <h4 class="page__share-title">Share on</h4>
+                    <a href="https://twitter.com/intent/tweet?text=https://atillaasghari.github.io/portfolio/portfolio-1/" class="btn btn--twitter" title="Share on Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://atillaasghari.github.io/portfolio/portfolio-1/" class="btn btn--facebook" title="Share on Facebook">
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://atillaasghari.github.io/portfolio/portfolio-1/" class="btn btn--linkedin" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+                    </a>
+                </section>
+                <nav class="pagination">
+                    <a href="#" class="pagination--pager disabled">Previous</a>
+                    <a href="../portfolio-2/index.html" class="pagination--pager" title="Portfolio item number 2">Next</a>
+                </nav>
+            </div>
+        </article>
+    </div>
+    <div class="page__footer" id="footer">
+        <script>
+            // Fetch and inject footer content
+            fetch('../../structure/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('#footer').innerHTML = html;
+                });
+        </script>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="../../assets/js/main.min.js"></script>
+</body>
+</html>

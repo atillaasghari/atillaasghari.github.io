@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Atilla ASghari's Home Page</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Atilla Asghari / website">
+    <meta property="og:title" content="Atilla Asghari Home Page">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="About me">
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Person",
+            "name" : "Atilla Asghari",
+            "url" : "https://atillaasghari.github.io",
+            "sameAs" : ["https://www.instagram.com/atilla_asghari/", "https://ir.linkedin.com/in/atilla-asghari-72280a21a"]
+        }
+    </script>
+
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/7356b287c5.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NW3D8FC2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Feed -->
+
+    <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Atilla Asghari / Home Page">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3D8FC2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">Atilla Asghari</a></li>
+                        <li class="masthead__menu-item"><a href="publications.html">Publications</a></li>
+                        <!-- <li class="masthead__menu-item"><a href="talks.html">Talks</a></li> -->
+                        <!-- <li class="masthead__menu-item"><a href="teaching.html">Teaching</a></li> -->
+                        <li class="masthead__menu-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="masthead__menu-item"><a href="blog.html">Blog Posts</a></li>
+                        <li class="masthead__menu-item"><a href="cv.html">CV</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="main" role="main">
+        <!-- Sidebar -->
+        <div class="sidebar sticky">
+            <script>
+                // Fetch and inject sidebar content
+                fetch('structure/sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('.sidebar.sticky').innerHTML = html;
+                    });
+            </script>
+        </div>
+
+        <div class="archive">
+            <h1 class="page__title">Blog posts</h1>
+
+            <!-- Placeholder for blog posts -->
+            <h2 id="2199" class="archive__subtitle">2199</h2>
+            <div class="list__item">
+                <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+                    <h2 class="archive__item-title" itemprop="headline">
+                        <a href="../posts/2199/01/future-blog-post/index.html" rel="permalink">Future Blog Post</a>
+                    </h2>
+                    <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> less than 1 minute read</p>
+                    <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2199-01-01T00:00:00-08:00">January 01, 2199</time></p>
+                    <!-- <p class="archive__item-excerpt" itemprop="description">
+                        <p>This post will show up by default. To disable scheduling of future posts, edit <code class="highlighter-rouge">config.yml</code> and set <code class="highlighter-rouge">future: false</code>.</p>
+                    </p> -->
+                </article>
+            </div>
+
+            <!-- Repeat the above structure for other years and blog posts -->
+
+        </div>
+    </div>
+
+    <div class="page__footer" id="footer">
+        <script>
+            // Fetch and inject footer content
+            fetch('./structure/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('#footer').innerHTML = html;
+                });
+        </script>
+    </div>
+
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

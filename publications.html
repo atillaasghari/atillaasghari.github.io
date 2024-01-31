@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Atilla ASghari's Home Page</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Atilla Asghari / website">
+    <meta property="og:title" content="Atilla Asghari Home Page">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="About me">
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Person",
+            "name" : "Atilla Asghari",
+            "url" : "https://atillaasghari.github.io",
+            "sameAs" : ["https://www.instagram.com/atilla_asghari/", "https://ir.linkedin.com/in/atilla-asghari-72280a21a"]
+        }
+    </script>
+
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/7356b287c5.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NW3D8FC2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Feed -->
+
+    <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Atilla Asghari / Home Page">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3D8FC2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Masthead -->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">Atilla Asghari</a></li>
+                        <li class="masthead__menu-item"><a href="publications.html">Publications</a></li>
+                        <!-- <li class="masthead__menu-item"><a href="talks.html">Talks</a></li> -->
+                        <!-- <li class="masthead__menu-item"><a href="teaching.html">Teaching</a></li> -->
+                        <li class="masthead__menu-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="masthead__menu-item"><a href="blog.html">Blog Posts</a></li>
+                        <li class="masthead__menu-item"><a href="cv.html">CV</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="main" role="main">
+        <!-- Sidebar -->
+        <div class="sidebar sticky">
+            <script>
+                // Fetch and inject sidebar content
+                fetch('./structure/sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('.sidebar.sticky').innerHTML = html;
+                    });
+            </script>
+        </div>
+
+        <!-- Publications Archive -->
+        <div class="archive">
+            <h1 class="page__title">Publications</h1>
+            <div class="list__item">
+                <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <h2 class="archive__item-title" itemprop="headline">
+                        <a href="../publication/2015-10-01-paper-title-number-3.html" rel="permalink">Paper Title Number 3</a>
+                    </h2>
+                    <p>Published in <i>Journal 1</i>, 2015</p>
+                    <p class="archive__item-excerpt" itemprop="description">
+                        <p>This paper is about the number 3. The number 4 is left for future work.</p>
+                    </p>
+                    <p>
+                        Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).
+                        <a href="../files/paper3.pdf"><u>http://academicpages.github.io/files/paper3.pdf</u></a>
+                    </p>
+                </article>
+            </div>
+        
+            <!-- Publication Item 2 -->
+            <div class="list__item">
+                <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <h2 class="archive__item-title" itemprop="headline">
+                        <a href="../publication/2010-10-01-paper-title-number-2.html" rel="permalink">Paper Title Number 2</a>
+                    </h2>
+                    <p>Published in <i>Journal 1</i>, 2010</p>
+                    <p class="archive__item-excerpt" itemprop="description">
+                        <p>This paper is about the number 2. The number 3 is left for future work.</p>
+                    </p>
+                    <p>
+                        Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+                        <a href="../files/paper2.pdf"><u>http://academicpages.github.io/files/paper2.pdf</u></a>
+                    </p>
+                </article>
+            </div>
+        
+            <!-- Publication Item 3 -->
+            <div class="list__item">
+                <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                    <h2 class="archive__item-title" itemprop="headline">
+                        <a href="../publication/2009-10-01-paper-title-number-1.html" rel="permalink">Paper Title Number 1</a>
+                    </h2>
+                    <p>Published in <i>Journal 1</i>, 2009</p>
+                    <p class="archive__item-excerpt" itemprop="description">
+                        <p>This paper is about the number 1. The number 2 is left for future work.</p>
+                    </p>
+                    <p>
+                        Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+                        <a href="../files/paper1.pdf"><u>http://academicpages.github.io/files/paper1.pdf</u></a>
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Footer -->
+    <div class="page__footer" id="footer">
+        <script>
+            // Fetch and inject footer content
+            fetch('./structure/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('#footer').innerHTML = html;
+                });
+        </script>
+    </div>
+    
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

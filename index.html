@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Atilla ASghari's Home Page</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Atilla Asghari / website">
+    <meta property="og:title" content="Atilla Asghari Home Page">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="About me">
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Person",
+            "name" : "Atilla Asghari",
+            "url" : "https://atillaasghari.github.io",
+            "sameAs" : ["https://www.instagram.com/atilla_asghari/", "https://ir.linkedin.com/in/atilla-asghari-72280a21a"]
+        }
+    </script>
+
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/7356b287c5.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NW3D8FC2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Feed -->
+
+    <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Atilla Asghari / Home Page">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3D8FC2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Masthead -->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">Atilla Asghari</a></li>
+                        <li class="masthead__menu-item"><a href="publications.html">Publications</a></li>
+                        <!-- <li class="masthead__menu-item"><a href="talks.html">Talks</a></li> -->
+                        <!-- <li class="masthead__menu-item"><a href="teaching.html">Teaching</a></li> -->
+                        <li class="masthead__menu-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="masthead__menu-item"><a href="blog.html">Blog Posts</a></li>
+                        <li class="masthead__menu-item"><a href="cv.html">CV</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main" role="main">
+        <!-- Sidebar -->
+        <div class="sidebar sticky">
+            <script>
+                // Fetch and inject sidebar content
+                fetch('structure/sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('.sidebar.sticky').innerHTML = html;
+                    });
+            </script>
+        </div>
+
+        <!-- Article Content -->
+        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <!-- ... Article Content ... -->
+            <div class="page__inner-wrap">
+                <header>
+                    <h1 class="page__title" itemprop="headline">About Me</h1>
+                </header>
+    
+                <section class="page__content" itemprop="text">
+                    <p>Hi I’m Atilla, I am a computer engineering student at Azad University of Urmia. Since childhood, 
+                        I have had a strong interest in computers and technology. 
+                        Initially, my focus was more on hardware and electronics. 
+                        I used to assemble and disassemble my computer and create electronic circuits, 
+                        often building new things with electronic components from my toys. In 1395 (2016/2017), 
+                        at the age of 15, I obtained a certificate as a general computer hardware repair technician.
+                    </p>
+                    <p>
+                        Later, I became familiar with the Python programming language, 
+                        marking the beginning of my journey into the programming world in 1398 (2019/2020). 
+                        After Python, I started learning various programming languages. I was eager to learn everything, 
+                        but I realized that I needed to narrow down the languages for my goals. 
+                        I identified Python, C/C++, PHP, and a small amount of JavaScript as the languages I could use for my purposes and continued learning them. 
+                        Alongside programming, I developed a keen interest in writing articles. 
+                        Because of this, I learned HTML/CSS to create my personal website. 
+                        This allows me to share my projects and articles on the platform.
+                    </p>
+    
+                    <!-- <h2 id="a-data-driven-personal-website">A data-driven personal website</h2>
+                    <p>Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website’s content from its form...</p>
+                    <h2 id="getting-started">Getting started</h2>
+                    <ol>
+                        <li>Register a GitHub account if you don’t have one and confirm your e-mail (required!)</li>
+                        <li>Fork <a href="https://github.com/academicpages/academicpages.github.io">this repository</a> by clicking the “fork” button in the top right.</li>
+                    </ol>
+                    <h2 id="site-wide-configuration">Site-wide configuration</h2>
+                    <p>The main configuration file for the site is in the base directory in <a href="https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml">_config.yml</a>, which defines the content in the sidebars and other site-wide features...</p>
+                    <h2 id="for-more-info">For more info</h2>
+                    <p>More info about configuring academicpages can be found in <a href="markdown/index.html">the guide</a>. The <a href="https://mmistakes.github.io/minimal-mistakes/docs/configuration/">guides for the Minimal Mistakes theme</a> (which this theme was forked from) might also be helpful.</p> -->
+                </section>
+    
+                <footer class="page__meta"></footer>
+            </div>
+        </article>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="page__footer" id="footer">
+        <script>
+            // Fetch and inject footer content
+            fetch('./structure/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('#footer').innerHTML = html;
+                });
+        </script>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>

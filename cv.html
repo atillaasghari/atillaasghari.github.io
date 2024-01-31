@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Atilla ASghari's Home Page</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Atilla Asghari / website">
+    <meta property="og:title" content="Atilla Asghari Home Page">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description" content="About me">
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Person",
+            "name" : "Atilla Asghari",
+            "url" : "https://atillaasghari.github.io",
+            "sameAs" : ["https://www.instagram.com/atilla_asghari/", "https://ir.linkedin.com/in/atilla-asghari-72280a21a"]
+        }
+    </script>
+
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/7356b287c5.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NW3D8FC2');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Feed -->
+
+    <link href="feed.xml" type="application/atom+xml" rel="alternate" title="Atilla Asghari / Home Page">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW3D8FC2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Masthead -->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav">
+                    <button><div class="navicon"></div></button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="index.html">Atilla Asghari</a></li>
+                        <li class="masthead__menu-item"><a href="publications.html">Publications</a></li>
+                        <!-- <li class="masthead__menu-item"><a href="talks.html">Talks</a></li> -->
+                        <!-- <li class="masthead__menu-item"><a href="teaching.html">Teaching</a></li> -->
+                        <li class="masthead__menu-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="masthead__menu-item"><a href="blog.html">Blog Posts</a></li>
+                        <li class="masthead__menu-item"><a href="cv.html">CV</a></li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div id="main" role="main">
+        
+        <!-- Sidebar -->
+        <div class="sidebar sticky">
+            <script>
+                // Fetch and inject sidebar content
+                fetch('structure/sidebar.html')
+                    .then(response => response.text())
+                    .then(html => {
+                        document.querySelector('.sidebar.sticky').innerHTML = html;
+                    });
+            </script>
+        </div>
+        <!-- CV Content -->
+        <div class="archive">
+            <h1 class="page__title">CV</h1>
+            <!-- Education -->
+            <h1 id="education">Education</h1>
+            <ul>
+                <li>B.S. in GitHub, GitHub University, 2012</li>
+                <li>M.S. in Jekyll, GitHub University, 2014</li>
+                <li>Ph.D in Version Control Theory, GitHub University, 2018 (expected)</li>
+            </ul>
+            <!-- Work Experience -->
+            <h1 id="work-experience">Work experience</h1>
+            <ul>
+                <li>Summer 2015: Research Assistant
+                    <ul>
+                        <li>Github University</li>
+                        <li>Duties included: Tagging issues</li>
+                        <li>Supervisor: Professor Git</li>
+                    </ul>
+                </li>
+                <li>Fall 2015: Research Assistant
+                    <ul>
+                        <li>Github University</li>
+                        <li>Duties included: Merging pull requests</li>
+                        <li>Supervisor: Professor Hub</li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Skills -->
+            <h1 id="skills">Skills</h1>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2
+                    <ul>
+                        <li>Sub-skill 2.1</li>
+                        <li>Sub-skill 2.2</li>
+                        <li>Sub-skill 2.3</li>
+                    </ul>
+                </li>
+                <li>Skill 3</li>
+            </ul>
+            <!-- Publications -->
+            <h1 id="publications">Publications</h1>
+            <ul>
+                <div class="list__item">
+                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <li>
+                            <h3 class="archive__item-title" itemprop="headline">
+                                <a href="../publication/2009-10-01-paper-title-number-1.html" rel="permalink">Paper Title Number 1 </a>
+                            </h3>
+                            <p class="archive__item-excerpt" itemprop="description">
+                                Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+                            </p>
+                        </li>
+                    </article>
+                </div>
+                <div class="list__item">
+                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <li>
+                            <h3 class="archive__item-title" itemprop="headline">
+                                <a href="../publication/2010-10-01-paper-title-number-2.html" rel="permalink">Paper Title Number 2 </a>
+                            </h3>
+                            <p class="archive__item-excerpt" itemprop="description">
+                                Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+                            </p>
+                        </li>
+                    </article>
+                </div>
+                <div class="list__item">
+                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <li>
+                            <h3 class="archive__item-title" itemprop="headline">
+                                <a href="../publication/2015-10-01-paper-title-number-3.html" rel="permalink">Paper Title Number 3 </a>
+                            </h3>
+                            <p class="archive__item-excerpt" itemprop="description">
+                                Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).
+                            </p>
+                        </li>
+                    </article>
+                </div>
+            </ul>
+            <!-- Talks -->
+            <h1 id="talks">Talks</h1>
+            <ul>
+                <div class="list__item">
+                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <li>
+                            <h3 class="archive__item-title" itemprop="headline">
+                                <a href="../talks/2012-03-01-talk-1.html" rel="permalink">Talk 1 on Relevant Topic in Your Field </a>
+                            </h3>
+                            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> March 01, 2012</p>
+                            <p class="archive__item-excerpt" itemprop="description">
+                                Talk at UC San Francisco, Department of Testing, San Francisco, California
+                            </p>
+                        </li>
+                    </article>
+                </div>
+                <!-- Add other talk items here -->
+            </ul>
+            <!-- Teaching -->
+            <h1 id="teaching">Teaching</h1>
+            <ul>
+                <div class="list__item">
+                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <li>
+                            <h3 class="archive__item-title" itemprop="headline">
+                                <a href="../teaching/2014-spring-teaching-1.html" rel="permalink">Teaching experience 1 </a>
+                            </h3>
+                            <p class="archive__item-excerpt" itemprop="description"></p>
+                        </li>
+                    </article>
+                </div>
+                <div class="list__item">
+                    <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
+                        <li>
+                            <h3 class="archive__item-title" itemprop="headline">
+                                <a href="../teaching/2015-spring-teaching-1.html" rel="permalink">Teaching experience 2 </a>
+                            </h3>
+                            <p class="archive__item-excerpt" itemprop="description"></p>
+                        </li>
+                    </article>
+                </div>
+            </ul>
+            <!-- Service and Leadership -->
+            <h1 id="service-and-leadership">Service and leadership</h1>
+            <ul>
+                <li>Currently signed in to 43 different slack teams</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="page__footer" id="footer">
+        <script>
+            // Fetch and inject footer content
+            fetch('structure/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('#footer').innerHTML = html;
+                });
+        </script>
+    </div>
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.min.js"></script>
+</body>
+</html>
