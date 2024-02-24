@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO -->
-    <title>Atilla ASghari's Home Page</title>
+    <title>Temperature Monitoring System</title>
     <meta property="og:locale" content="en-US">
     <meta property="og:site_name" content="Atilla Asghari / website">
     <meta property="og:title" content="Atilla Asghari Home Page">
@@ -82,53 +82,34 @@
         <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
             <div class="page__inner-wrap">
                 <header>
-                    <h1 class="page__title" itemprop="headline">Resistor Calculator</h1>
+                    <h1 class="page__title" itemprop="headline">Temperature Monitoring System</h1>
                 </header>
                 <section class="page__content" itemprop="text">
-                    <p>
-                        The Resistor Calculator is a user-friendly Python application designed to assist engineers, hobbyists, and students in determining the resistance value of resistors based on their color bands. Developed using the Tkinter library, this interactive tool supports resistors with 3 to 6 color bands, providing accurate calculations with just a few clicks.
-                    </p>
+                    <p>This project involves monitoring temperature using a temperature sensor interfaced with a microcontroller, specifically an ATmega32. The temperature reading is displayed on a 16x2 character LCD screen. Additionally, the system alerts users if the temperature exceeds certain thresholds.</p>
                     <hr>
-                        <a href="https://github.com/atillaasghari/resistor-calculator">[Project github link]</a>
+                        <a href="https://github.com/atillaasghari/electronic-projects/tree/main/temperature">[Project github link]</a>
                     <hr>
-                    <h2>Screenshots:</h2>
-                    <img src="images/Resistor-Calculator-1.png"><hr>
-                    <img src="images/Resistor-Calculator-2.png">
-                    <h2>Key Features:</h2>
+                    <h2>Hardware Components</h2>
                     <ul>
-                        <li><b>Intuitive Interface:</b>
-                            The application features a simple and intuitive interface, allowing users to easily select the number of color bands and choose the corresponding colors for each band.
-                        </li>
-                        <li><b>Dynamic Image Update:</b>
-                            As users select the number of bands, the application dynamically updates the display to show the appropriate resistor image, providing visual assistance throughout the calculation process.
-                        </li>
-                        <li><b>Efficient Calculation:</b>
-                            Upon selecting the color bands, users can simply click the "Calculate" button to instantly obtain the resistance value of the resistor, along with the tolerance percentage, making the calculation process efficient and hassle-free.
-                        </li>
-                        <li><b>Support for Special Cases:</b>
-                            The Resistor Calculator handles special cases such as Gold and Silver bands for multipliers, ensuring accurate calculations even for resistors with unique color configurations.
-                        </li>
+                      <li>ATmega32 microcontroller</li>
+                      <li>16x2 character LCD display</li>
+                      <li>Temperature sensor</li>
+                      <li>Crystal oscillator (8MHz)</li>
                     </ul>
-                    <h2>How to Use:</h2>
-                    <ol>
-                        <li><b>Select Number of Bands:</b>
-                            Choose the number of color bands on the resistor using the dropdown menu.
-                        </li>
-                        <li><b>Choose Band Colors:</b>
-                            Select the color of each band using the provided dropdown menus.
-                        </li>
-                        <li><b>Calculate Resistance:</b>
-                            Click on the "Calculate" button to generate the resistance value of the resistor.
-                        </li>
-                        <li><b>View Result:</b>
-                            The calculated resistance value, along with the tolerance percentage, will be displayed for easy reference.
-                        </li>
-                    </ol>
-                    <p>
-                        Whether you're a seasoned electronics enthusiast or just starting out, the Resistor Calculator simplifies the process of resistor value determination, making it an indispensable tool for any electronics project.
+                    
+                    <h2>Diagram and code</h2>
+                    <img src="img/temperature-diagram.png"><br>
+                    <img src="img/temperature-code.png">
+                    
+                    <h2>Functionality</h2>
+                    <p>The microcontroller reads the analog voltage from the temperature sensor using the ADC. It then converts this voltage into temperature in degrees Celsius and displays it on the LCD screen. Additionally, the system checks if the temperature exceeds predefined thresholds (30°C for high temperature and 15°C for low temperature) and provides alerts accordingly.</p>
+                    
+                    <h2>Code Overview</h2>
+                    <p>The code configures the ADC to read from a specified pin connected to the temperature sensor. It continuously reads the analog voltage, converts it to temperature, and displays the result on the LCD screen. It also checks for high and low temperature conditions and displays corresponding messages.</p>
+                    
+                    <h2>Conclusion</h2>
+                    <p>This temperature monitoring system demonstrates the use of a microcontroller to interface with a sensor and provide real-time temperature readings. It can be deployed in various applications such as environmental monitoring, industrial automation, and HVAC systems to ensure optimal temperature conditions.</p>
 
-                        Ready to streamline your resistor calculations? Try out the Resistor Calculator today!
-                    </p>
                 </section>
                 <footer class="page__meta"></footer>
                 <section class="page__share">
@@ -144,8 +125,8 @@
                     </a>
                 </section>
                 <nav class="pagination">
-                    <a href="#" class="pagination--pager disabled">Previous</a>
-                    <a href="../digital-clock/index.html" class="pagination--pager" title="digital-clock">Next</a>
+                    <a href="../digital-clock/index.html" class="pagination--pager">Previous</a>
+                    <a href="../voltmeter/index.html" class="pagination--pager" title="Portfolio item number 2">Next</a>
                 </nav>
             </div>
         </article>
